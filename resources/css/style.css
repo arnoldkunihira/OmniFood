@@ -394,3 +394,40 @@ cite img {
     /*to align bulungi*/
     vertical-align: middle;
 }
+
+/*----------------SIGN UP----------------*/
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    /*half of the remaining 10% for the above width(wch is the parent)*/
+    margin-left: 5%;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    /*font weight is 100 cz of LATO */
+    font-weight: 100;
+    color: #e67e22;
+}
+
+/*Inherits from the parent plan-price */
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
