@@ -406,11 +406,24 @@ cite img {
     width: 90%;
     /*half of the remaining 10% for the above width(wch is the parent)*/
     margin-left: 5%;
+    /*adding a shadow to the entire box ie 1st one is x-axis, y-axis, blur axis and color*/
+    box-shadow: 0 2px 2px #efefef;
 }
 
 .plan-box div {
     padding: 15px;
     border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
 }
 
 .plan-price {
@@ -431,3 +444,11 @@ cite img {
     font-size: 80%;
 }
 
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    /*padding at the top + bottom and none on the sides(left and right)*/
+    padding: 5px 0;
+}
