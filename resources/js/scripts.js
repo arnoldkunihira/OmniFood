@@ -12,15 +12,34 @@ $(document).ready(function () {
         } else {
             $('nav').removeClass('sticky');
         }
-    //    Happens before we hit the js--section-features
+        //    Happens before we hit the js--section-features
     }, {
         offset: '60px'
     });
 
+    /* Animations on Scroll*/
 
-    // var waypoints = $('#handler-first').waypoint(function (direction) {
-    //     notify(this.element.id + ' hit 25% from top of window')
-    // }, {
-    //     offset: '25%'
-    // })
+    $('.js--waypoint-1').waypoint(function () {
+        $('.js--waypoint-1').addClass('animated fadeIn')
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--waypoint-2').waypoint(function () {
+        $('.js--waypoint-2').addClass('animated fadeInUp')
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--waypoint-3').waypoint(function () {
+        $('.js--waypoint-3').addClass('animated fadeIn')
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--waypoint-4').waypoint(function () {
+        $('.js--waypoint-4').addClass('animated pulse')
+    }, {
+        offset: '50%'
+    });
 });

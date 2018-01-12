@@ -613,3 +613,26 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
+
+/*----------------ANIMATIONS----------------*/
+
+.js--waypoint-1,
+.js--waypoint-2,
+.js--waypoint-3 {
+    /*The element is not visible*/
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--waypoint-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--waypoint-1.animated,
+.js--waypoint-2.animated,
+.js--waypoint-3.animated {
+    opacity: 1;
+}
+
